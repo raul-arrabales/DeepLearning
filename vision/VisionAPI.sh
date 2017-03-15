@@ -16,7 +16,6 @@ gcloud components update
 
 # Initialize the SDK, log in and select project 
 gcloud init
-
 gcloud auth application-default login 
 
 
