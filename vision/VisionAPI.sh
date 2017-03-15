@@ -18,6 +18,9 @@ gcloud components update
 gcloud init
 gcloud auth application-default login 
 
+# Set the path to project auth key
+export GOOGLE_APPLICATION_CREDENTIALS=$HOME/vision/key/FaceDetection1-XXXXXXXXX.json
+
 
 
 
