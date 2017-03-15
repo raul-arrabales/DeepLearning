@@ -1,5 +1,6 @@
 import numpy as np
 import tensorflow as tf
+
 # Declare list of features, we only have one real-valued feature
 def model(features, labels, mode):
   # Build a linear model and predict values
@@ -30,3 +31,4 @@ input_fn = tf.contrib.learn.io.numpy_input_fn({"x": x}, y, 4, num_epochs=1000)
 estimator.fit(input_fn=input_fn, steps=1000)
 # evaluate our model
 print(estimator.evaluate(input_fn=input_fn, steps=10))
+# {'loss': 3.7314297e-11, 'global_step': 1000}
