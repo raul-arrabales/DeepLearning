@@ -15,4 +15,4 @@ sess = tf.Session()
 
 print("sess.run(node3): ",sess.run(node3))
 
-# Output: [3.0, 4.0]
+# Output: 7
