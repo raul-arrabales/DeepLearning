@@ -26,4 +26,8 @@ estimator.fit(input_fn=input_fn, steps=1000)
 
 # Here we evaluate how well our model did. In a real example, we would want
 # to use a separate validation and testing data set to avoid overfitting.
-estimator.evaluate(input_fn=input_fn)
+# estimator.evaluate(input_fn=input_fn)
+
+print(estimator.evaluate(input_fn=input_fn))                                          
+# Output: {'loss': 6.0684201e-08, 'global_step': 1000}
+
